@@ -11,9 +11,13 @@ library(stringr)
 
 
 GC_cont<-function(GCs){
-  vec<- c(el)
-  gc_content<- (str_count(vec, "G"))+(str_count(vec, "C"))/(str_count(vec))
-    return(gc_content)
+  Up<-str_to_upper(GCs)
+  gc_content<- (str_count(Up, "G"))+(str_count(Up, "C"))/(str_count(Up))
+    return(c(gc_content))
 }
 
-GC_cont(ear_length_1$dnaseq)
+
+ear_l<-as.vector(ear_length_1$dnaseq)
+
+
+GC_cont(ear_l)
