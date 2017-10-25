@@ -23,3 +23,8 @@ ear_l<-as.vector(ear_length_1$dnaseq)
 
 GC_cont(ear_l)
 
+sdsd<-ds
+
+
+
+
